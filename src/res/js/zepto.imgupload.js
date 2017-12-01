@@ -61,7 +61,7 @@ import './../css/zepto.imgupload.less';
   }
 
   $.extend(ImgUpload.prototype, {
-    init: function() { console.log(this);
+    init() {
       let fileInput = $('<input type="file" class="input-img-upload">');
 
       fileInput
@@ -129,8 +129,6 @@ import './../css/zepto.imgupload.less';
 
             this.isUpload = true;
 
-            console.log(filesImgInfos);
-
             this.opts.callback(filesImgInfos);
 
             $.each(filesImgInfos, (index, item) => {
@@ -142,7 +140,7 @@ import './../css/zepto.imgupload.less';
       });
     },
 
-    createUploadTips: function() {
+    createUploadTips() {
       let  uploadTips = $('<div class="upload-tips" />'),
         icon = $('<i class="icon icon-add" />'),
         uploadTipsDesc;
@@ -158,7 +156,7 @@ import './../css/zepto.imgupload.less';
       uploadTips.appendTo(this.uploadEle);
     },
 
-    createUploadContent: function(imgBase64) {
+    createUploadContent(imgBase64) {
       let uploadContent = $('<div class="upload-content" />'),
         iconCancel = $('<i class="icon icon-cancel" />');
 
@@ -183,7 +181,7 @@ import './../css/zepto.imgupload.less';
 
     },
 
-    removeUploadContent: function(iconCancel) {
+    removeUploadContent(iconCancel) {
 
       $(iconCancel).parent('.upload-content').removeClass('in');
 
