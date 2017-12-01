@@ -6,17 +6,17 @@ imgUpload演示：**[demo](http://joy-yi0905.github.io/imgUpload/demo/demo.html)
 
 ### 如何使用
 
-- 首先引入插件的样式文件 `zepto..imgupload.min.css`
+- 首先引入插件的样式文件 `zepto.imgupload.min.css`
 
 ```html
-<link rel="stylesheet" href="src/zepto.imgupload.min.css">
+<link rel="stylesheet" href="zepto.imgupload.min.css">
 ```
 
 - 然后再引入 `zepto.min.js` 和 `zepto.imgupload.min.js`（这些文件包含在demo目录）
 
 ```html
-<script src="src/zepto.min.js"></script>
-<script src="src/zepto.imgupload.min.js"></script>
+<script src="zepto.min.js"></script>
+<script src="zepto.imgupload.min.js"></script>
 ```
 
 - 最后，在页面里相应的元素添加方法。 相关示例代码：
