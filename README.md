@@ -37,6 +37,6 @@ $('.upload-item').imgUpload();
 |----------|----------|------------|----------|
 | uploadTipsDesc | 上传描述 | 空 | 字符串 |
 | multiple | 是否可上传多个 | false | 布尔值  |
-| accept | 上传图片格式限制 | 'image/gif,image/jpeg,image/png,image/svg' | 字符串 |
+| accept | 上传图片格式限制 | 'image/*' | 字符串 |
 | callback | 每次上传完的回调 | 空函数 | 包含图片信息 |
 

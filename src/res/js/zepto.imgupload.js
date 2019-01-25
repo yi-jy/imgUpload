@@ -49,7 +49,7 @@ import './../css/zepto.imgupload.less';
     defaults = {
       uploadTipsDesc: '',
       multiple: false,
-      accept: 'image/gif,image/jpeg,image/png,image/svg',
+      accept: 'image/*',
       callback: () => {}
     }) {
 
